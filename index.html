@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donate to Hatd</title>
+    <style>
+        body {
+            text-align: center;
+        }
+
+        .copy-container {
+            text-align: center;
+            position: relative;
+            padding: 0 66px;
+            width: fit-content;
+            margin: auto;
+            background-color: #f7f7f7;
+            border: 1px solid #e1e1e1;
+            border-radius: 5px;
+            font-family: "Courier New", Courier, monospace;
+        }
+
+        /* Icon button styles */
+        .copy-btn {
+            position: absolute;
+            top: 5px;
+            right: 5px;
+            background-color: transparent;
+            border: none;
+            cursor: pointer;
+            padding: 5px;
+            border-radius: 5px;
+            transition: background-color 0.2s;
+        }
+
+        .copy-btn:hover {
+            background-color: #e0e0e0;
+        }
+
+        .copy-btn img {
+            width: 16px;
+            height: 16px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Cảm ơn ae đã tin tưởng.</h1>
+
+    <h2>Binance id:</h2>
+    <div class="copy-container">
+        <p id="text-to-copy-1">194546373</p>
+        <button class="copy-btn" onclick="copyText('text-to-copy-1')">
+            <img src="copy.svg" alt="Copy">
+        </button>
+    </div>
+
+    <h2>Okx uid:</h2>
+    <div class="copy-container">
+        <p id="text-to-copy-2">377130306525925746</p>
+        <button class="copy-btn" onclick="copyText('text-to-copy-2')">
+            <img src="copy.svg" alt="Copy">
+        </button>
+    </div>
+
+    <h2>Bybit uid:</h2>
+    <div class="copy-container">
+        <p id="text-to-copy-3">58987214</p>
+        <button class="copy-btn" onclick="copyText('text-to-copy-3')">
+            <img src="copy.svg" alt="Copy">
+        </button>
+    </div>
+
+    <h2>Evm:</h2>
+    <div class="copy-container">
+        <p id="text-to-copy-4">0x2773031d763067Ab1cD42B52Cd8e5BAAb420d3CC</p>
+        <button class="copy-btn" onclick="copyText('text-to-copy-4')">
+            <img src="copy.svg" alt="Copy">
+        </button>
+    </div>
+    <img src="https://github.com/user-attachments/assets/a201c8f1-7396-4b04-8dcc-71ea84c56c49" alt="">
+
+    <h2>Ton:</h2>
+    <div class="copy-container">
+        <p id="text-to-copy-5">UQA0I6d_Sc3B-atkEaHQl8iJytZ1jPe5TPvkJHsCPIBPRxXR</p>
+        <button class="copy-btn" onclick="copyText('text-to-copy-5')">
+            <img src="copy.svg" alt="Copy">
+        </button>
+    </div>
+    <img src="https://github.com/user-attachments/assets/6fbeebd7-9366-41c9-b9dd-4917c13ed9f1" alt="">
+
+    <h2>Vietcombank:</h2>
+    <div class="copy-container">
+        <p id="text-to-copy-6">0021000381797</p>
+        <button class="copy-btn" onclick="copyText('text-to-copy-6')">
+            <img src="copy.svg" alt="Copy">
+        </button>
+    </div>
+    <img src="https://github.com/user-attachments/assets/13a28b3a-db7d-4d49-89cb-ec0fe21830d0" alt="">
+
+    <!-- Add more blocks as needed -->
+
+    <script>
+        function copyText(elementId) {
+            const text = document.getElementById(elementId).innerText
+            navigator.clipboard.writeText(text)
+        }
+    </script>
+</body>
+
+</html>
